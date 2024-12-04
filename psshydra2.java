@@ -165,7 +165,7 @@ public class psshydra2 {
         }
     }
 
-    //以BMS形式print
+    //以BMS形式print (如果你想看BMS，可以把上面所有的printp()换成printb(f))
     public static void printb(int[][] f){
         for (int i=0;i<=f.length;i++){
             if (f[i][0] != 0){
