@@ -95,7 +95,6 @@ public class psshydra2 {
         }
     }
 
-    //pn(..+pn(..)) to pn(..+pn+1(0)) part
     public static void insidepart(){
         int j;
         isequal = true;
@@ -131,7 +130,6 @@ public class psshydra2 {
         }
     }
 
-    //pnX+pnX to pn(X+p1) part
     public static void equalpart(){
         isequal = true;
         while (isequal) {
