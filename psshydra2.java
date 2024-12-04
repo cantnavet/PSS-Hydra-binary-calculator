@@ -40,6 +40,7 @@ public class psshydra2 {
     //主要设定(可以改这里的东西)
     public static boolean steps = true;       //是否展示收束步骤(pss hydra)
     public static double sleeptime = 1;       //每次步骤的间隔时间（秒）
+    public static int skipsteps = 1;          //修改此项来决定每n个表达式输出一次，1就是每个都输出
     public static int runtimes = 1000;        //运行次数
     //初始表达式，n为pn，d为深度 (0为没有该项，最小深度和n为1)
     public static String n = "123121";
@@ -64,7 +65,7 @@ public class psshydra2 {
 
             toNormal();                                 //main 2进制进位 method, 将序列f合并至最简化
 
-            if(i%1==0){printp();}                       //print ans, 更改i%x 做到隔x步输出一次公式
+            if(i%skipsteps==0){printp();}               //print ans, 更改i%x 做到隔x步输出一次公式
 
             try {                                       //输出间隔
                 Thread.sleep(sleeptimems); 
